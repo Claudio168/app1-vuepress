@@ -1,5 +1,5 @@
 module.exports = {
-  base: 'docs/.vuepress/config.js',
+  base: '/.vuepress/dist/index.html',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },//Home es lo que se pinta en el navbar 
