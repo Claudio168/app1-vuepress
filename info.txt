@@ -1,0 +1,47 @@
+Instalar: npm install -g vuepress
+Correr servidor: vuepress dev . 
+
+Pagina oficial: https://vuepress.vuejs.org/
+- en guide - markdown extensions - Custom Title , para colocar cajas con código de ejemplos
+Tutorial bluuweb: https://www.youtube.com/watch?v=o334x1W_RDY&ab_channel=Bluuweb%21
+
+- Para crer un proyecto se dede crear un archivo llamado README.md en donde se puede utilizar código markdown 
+por ejemplo el # es un h1, el ## un h2 etc.
+
+- Ahora de debe crear una carpeta con el nombre de .vuepress dentro de esta se crea un archivo con el nombre de 
+config.js, tamién en esta carpeta se puede crer un directorio publico en donde se puede crear otra carpeta para 
+las imagenes por ej: vuepress/public/img 
+
+- dentro de README.md se puede crer la vista principal de la página (revisar archivo)
+
+- Para crear un navbar y un sidebar en config.js escribir:
+ module.exports = {
+  themeConfig: {
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'Guide', link: '/guia/' },
+      { text: 'About', link: '/about/' },
+      { text: 'External', link: 'https://google.com' }
+    ],
+    sidebar: {
+      '/guia/':[
+        '',//esto es para que aparesca la vista principal en el sidebar
+        'nuevaguia',
+        'otraguia'
+      ]
+    }
+
+  }
+}
+- Se debe crear en la raiz las carpetas con los nombres de las rutas y dentro de este se crer un archivo .md 
+que es la vista que se va a mostrar.
+
+- Para el caso de sidebar se escribe el nombre de la vista y dentro de esta las subvistas ejemplo:
+  sidebar: {
+      '/guia/':[//esta es la vista
+        '',//esto es para que aparesca la vista principal en el sidebar
+        'nuevaguia',//estas son subvistas
+        'otraguia'
+      ]
+    }
+
