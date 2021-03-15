@@ -1,8 +1,8 @@
 module.exports = {
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guia/' },
+      { text: 'Home', link: '/' },//Home es lo que se pinta en el navbar 
+      { text: 'Guide', link: '/guia/' },//Guide es lo que se pinta en el navbar y guia hace referencia a la carpeta creada
       { text: 'About', link: '/about/' },
       { text: 'External', link: 'https://google.com' }
     ],
